@@ -1,6 +1,6 @@
 export default function AnnouncementBar() {
   return (
-    <div className="bg-[#370627] text-white text-sm text-center py-2.5 px-4">
+    <div className="bg-[#53093a] text-white text-sm text-center py-2.5 px-4">
       <span>BSC Mentorship 2026 Applications Now Open · </span>
       <a
         href="#"

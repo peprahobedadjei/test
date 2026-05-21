@@ -32,3 +32,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-weight: 700;
 }
+
+.hero-overlay {
+  background: linear-gradient(
+    to right,
+    #4b0a2db3 0%,
+    #4b0a2d40 70%,
+    transparent 100%
+  );
+}

@@ -1,6 +1,7 @@
 import AnnouncementBar from "../components/Announcementbar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/Herosection";
+import Pathways from "@/components/Pathways";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       */}
       <div className="pt-16">
         <HeroSection />
+         <Pathways />
       </div>
     </>
   );

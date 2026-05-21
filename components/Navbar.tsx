@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "Pathways", href: "#" },
-  { label: "For Business", href: "#" },
-  { label: "Free Cohort", href: "#" },
-  { label: "Marketplace", href: "#" },
+  { label: "Pathways", href: "#pathways" },
+  { label: "For Business", href: "#business" },
+  { label: "Free Cohort", href: "#cohort" },
+  { label: "Marketplace", href: "#marketplace" },
 ];
 
 export default function Navbar() {
@@ -24,13 +24,13 @@ export default function Navbar() {
   return (
     <header
       className={`fixed left-0 right-0 z-50 bg-white duration-300 ${
-        scrolled ? "top-0" : "top-[50px]"
+        scrolled ? "top-0" : "top-12.5"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-baseline gap-2">
-          <span className="text-[#370627] font-bold text-xl tracking-tight">
+          <span className="text-[#53093a] font-bold text-xl tracking-tight">
             Ascendency
           </span>
           <span className="text-gray-400 text-xs font-normal">
@@ -44,7 +44,7 @@ export default function Navbar() {
             <li key={link.label}>
               <Link
                 href={link.href}
-                className="text-gray-700 text-sm font-medium hover:text-[#cd0e34] transition-colors"
+                className="text-[#370627b3] text-sm font-medium hover:text-[#cd0e34] transition-colors"
               >
                 {link.label}
               </Link>
@@ -54,10 +54,10 @@ export default function Navbar() {
 
         {/* CTA */}
         <Link
-          href="#"
+          href="/auth"
           className="bg-[#cd0e34] text-white text-sm font-semibold px-5 py-2.5 rounded hover:bg-[#a80b2a] transition-colors"
         >
-          Dashboard
+          Sign In
         </Link>
       </nav>
     </header>

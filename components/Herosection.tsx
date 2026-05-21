@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
- 
+
 export default function HeroSection() {
   return (
     <section className="relative w-full min-h-screen flex items-center overflow-hidden">
@@ -14,27 +14,27 @@ export default function HeroSection() {
           priority
         />
         {/* Maroon overlay */}
-        <div className="absolute inset-0 bg-[#370627]/60" />
+        <div className="absolute inset-0 hero-overlay" />
       </div>
- 
+
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 py-32 md:py-10">
+      <div className="relative z-10 w-full max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-4 py-32 md:py-10">
         <div className="max-w-xl">
           <p className="text-white/80 text-xs font-semibold uppercase tracking-widest mb-4">
             A Because She Can Programme
           </p>
- 
+
           <h1 className="text-white font-bold text-5xl md:text-6xl leading-tight mb-4">
             Where African Excellence{" "}
             <em className="italic font-bold">Ascends.</em>
           </h1>
- 
+
           <p className="text-white/85 text-base md:text-lg leading-relaxed mb-10 max-w-md">
             A trusted mentorship ecosystem connecting ambitious Africans with
             world-class guidance. From free cohorts to curated pathways — grow
             at every stage.
           </p>
- 
+
           <div className="flex flex-wrap gap-4">
             <Link
               href="#"
